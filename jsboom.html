@@ -5,7 +5,7 @@
     <script>
         function updateCount() {
             i = i - 1; // single "=" means assignment (":=") 
-
+            document.body.style.backgroundColor = #FF0000;
             countobj = document.getElementById("count");
             console.log("Updating i: " + i);
             countobj.innerHTML = "<b>" + i + "</b>";
