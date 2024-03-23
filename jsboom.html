@@ -1,4 +1,11 @@
 <html>
+
+<head>
+    <title>
+        Style backgroundColor Property 
+    </title>
+(/head>)
+
 <style>
     html, body, #map {
       background-color: #e70707;
@@ -7,10 +14,24 @@
       padding: 0; 
       margin: 0;
 </style>
+
 <body>
     <h1>Exploring the DOM</h1>
 
+    <h2>
+        Style backgroundColor Property
+    </h2>
+    <button type="button" onclick="Next()">
+        Submit
+    </button>
+       
+      <script>
+        /* script to set background color */
+        function Next() {
+            document.body.style.backgroundColor =
+                "#f#e70707";
     <script>
+
         function updateCount() {
             i = i - 1; // single "=" means assignment (":=") 
 
@@ -31,6 +52,10 @@
 
     <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
     <button onclick="updateCount()">Next</button>
+
+    <h2>
+        Style backgroundColor Property
+    </h2>
 
 </body>
 </html>
