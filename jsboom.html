@@ -16,28 +16,45 @@
     <h1>Exploring the DOM</h1>
        
       <script>
-        /* script to set background color */
-        function Next() {
-            document.body.style.backgroundColor =
-                "#fe70707";
-    <script>
+        
+        var i = 5;
 
+        /* script to set background color */
+        function nextRed() {
+                backcolor = "#fe70707"
+                if(i == 4){
+                  backcolor = "#880808"
+                }
+                else if(i==3){
+                    backcolor = "#EE4B2B"
+                }
+                else if(i==2){
+                    backcolor = "#E97451"
+                }
+                else if(i==1){
+                    backcolor = "#C41E3A"
+                }
+                else{
+                    #e70707
+                }
+                document.body.style.backgroundColor =
+                backcolor; 
+        }
         function updateCount() {
-            i = i - 1; // single "=" means assignment (":=") 
+            i = i - 1; /// single "=" means assignment (":=") 
 
             countobj = document.getElementById("count");
             console.log("Updating i: " + i);
             countobj.innerHTML = "<b>" + i + "</b>";
+            nextRed();
 
             if (i <= 0) { // double "==" is equality comparison
                 countobj.innerHTML = "<b><font size='+5'>DONE!</b>";
             }
 
         }
-    </script>
-
-    <script>
-        var i = 5;
+    
+        
     </script>
 
     <h2>Count Down: <span id="count"><script>document.write(i)</script></span></h2>
