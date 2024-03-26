@@ -1,0 +1,24 @@
+<img id="cimage" height="600" src="rotunda_night_summer_17_ss_header_5-2.jpg" alt="Image Changes">
+
+var carouselImage = document.getElementById("cimage");
+carouselImage.src =
+
+<button onclick="showNextImage()">Press</button>
+
+<script>
+// Array of carouselImage
+var images = [
+the-rotunda.jpg
+];
+
+var currentImageIndex = 0;
+function showImage(index) {
+    var carouselImage = document.getElementById(carousel-image);
+    carouselImage.src = images[index];
+}
+
+function showNextImage() {
+currentImageIndex = (currentImageIndex + 1)  ;images.length;
+showImage(currentImageIndex);
+}
+</script>
