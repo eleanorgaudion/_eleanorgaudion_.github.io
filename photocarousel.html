@@ -7,21 +7,20 @@
 // Array of cimage
 var images = [
 
-the-rotunda.jpg,
+"the-rotunda.jpg",
 
-rotunda-two.jpg
+"rotunda-two.jpg"
 
 ];
 
 var currentImageIndex = 0;
 function showImage(index) {
-    var carouselImage = 
-document.getElementById("cimage");
+    var carouselImage =  document.getElementById("cimage");
     carouselImage.src = images[index];
 }
 
 function showNextImage() {
-    currentImageIndex = (currentImageIndex + 1)  ;images.length;
-showImage(currentImageIndex);
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    showImage(currentImageIndex);
 }
 </script>
