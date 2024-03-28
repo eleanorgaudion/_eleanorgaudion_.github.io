@@ -24,3 +24,37 @@ function showNextImage() {
     showImage(currentImageIndex);
 }
 </script>
+
+<button onclick="myFunction()">Click Me!</button>
+
+<script>
+function myFunction() {
+  var x = document.createElement("BUTTON");
+  var t = document.createTextNode("Good Job!");
+  x.appendChild(t);
+  document.body.appendChild(x);
+}
+
+/* script to set background color */
+function nextRainbow() {
+                backcolor = "#FFD1DC"
+                if(i == 4){
+                  backcolor = "#FFA500"
+                }
+                else if(i==3){
+                    backcolor = "#0000FF"
+                }
+                else if(i==2){
+                    backcolor = "#FFFF00"
+                }
+                else if(i==1){
+                    backcolor = "#00FF00"
+                }
+                else{
+                    backcolor = "#964B00"
+                }
+                document.body.style.backgroundColor =
+                backcolor; 
+        }
+</script>
+
